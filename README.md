@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `product` (
 
 Note:
 
-1. Here OkHttp plugin is used to coomunicate with APIs created in PHP.
+1. Here OkHttp plugin is used to coomunicate with APIs created in PHP. Refer - http://square.github.io/okhttp/
 
 2. 4 APIs are create for CRUD operations in PHP and the database is created in MySQL (using wampserver).
 
