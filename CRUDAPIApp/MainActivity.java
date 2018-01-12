@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
                     OkHttpClient client = new OkHttpClient();
 
-                    HttpUrl.Builder urlBuilder = HttpUrl.parse("http://192.168.43.177:8081/CRUDAPI/create.php").newBuilder();
+                    HttpUrl.Builder urlBuilder = HttpUrl.parse("http://192.168.1.1/CRUDAPI/create.php").newBuilder();
                     urlBuilder.addQueryParameter("PName", txtPName.getText().toString());
                     urlBuilder.addQueryParameter("Price", txtPrice.getText().toString());
 
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
                     OkHttpClient client = new OkHttpClient();
 
-                    HttpUrl.Builder urlBuilder = HttpUrl.parse("http://192.168.43.177:8081/CRUDAPI/read.php").newBuilder();
+                    HttpUrl.Builder urlBuilder = HttpUrl.parse("http://192.168.1.1/CRUDAPI/read.php").newBuilder();
                     urlBuilder.addQueryParameter("PID", txtPID.getText().toString());
 
                     String url = urlBuilder.build().toString();
@@ -172,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
 
                     OkHttpClient client = new OkHttpClient();
 
-                    HttpUrl.Builder urlBuilder = HttpUrl.parse("http://192.168.43.177:8081/CRUDAPI/update.php").newBuilder();
+                    HttpUrl.Builder urlBuilder = HttpUrl.parse("http://192.168.1.1/CRUDAPI/update.php").newBuilder();
                     urlBuilder.addQueryParameter("PID", txtPID.getText().toString());
                     urlBuilder.addQueryParameter("PName", txtPName.getText().toString());
                     urlBuilder.addQueryParameter("Price", txtPrice.getText().toString());
@@ -227,7 +227,7 @@ public class MainActivity extends AppCompatActivity {
 
                     OkHttpClient client = new OkHttpClient();
 
-                    HttpUrl.Builder urlBuilder = HttpUrl.parse("http://192.168.43.177:8081/CRUDAPI/delete.php").newBuilder();
+                    HttpUrl.Builder urlBuilder = HttpUrl.parse("http://192.168.1.1/CRUDAPI/delete.php").newBuilder();
                     urlBuilder.addQueryParameter("PID", txtPID.getText().toString());
 
                     String url = urlBuilder.build().toString();
