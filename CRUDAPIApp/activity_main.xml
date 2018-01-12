@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.crudapiapp.MainActivity">
+
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="51dp"
+        android:text="Create" />
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRead"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnCreate"
+        android:layout_alignStart="@+id/btnCreate"
+        android:layout_below="@+id/btnCreate"
+        android:layout_marginTop="50dp"
+        android:text="Read" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnCreate"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_toEndOf="@+id/txtInfo"
+        android:layout_toRightOf="@+id/txtInfo"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnUpdate"
+        android:layout_alignRight="@+id/btnUpdate"
+        android:layout_alignTop="@+id/btnRead"
+        android:text="Delete" />
+
+    <EditText
+        android:id="@+id/txtPID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnRead"
+        android:layout_alignStart="@+id/btnRead"
+        android:layout_below="@+id/txtInfo"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Product ID"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtPName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPID"
+        android:layout_alignStart="@+id/txtPID"
+        android:layout_below="@+id/txtPID"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Product Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPName"
+        android:layout_alignStart="@+id/txtPName"
+        android:layout_below="@+id/txtPName"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textPersonName" />
+</RelativeLayout>
