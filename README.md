@@ -29,17 +29,17 @@ to a JSON format as an open standard for transport of data just like XML.
 
 7. The JSON code returned during read operation is as below:
 
-Example:
+    Example:
 
-[
-  {
-    "ProductID": "2",
-    "PName": "P1",
-    "Price": "100"
-  }
-]
+    [
+      {
+        "ProductID": "2",
+        "PName": "P1",
+        "Price": "100"
+      }
+    ]
 
-To process this in Android JSONArray and JSONObject classes are used.
+    To process the above code in Android JSONArray and JSONObject classes are used.
 
 8. The URL used in the Android code for the API is the IP address of the machine running the PHP code. To access the data
 in the Android App the devices should be connected in the same network.
