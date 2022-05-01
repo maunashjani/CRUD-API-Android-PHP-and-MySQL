@@ -15,7 +15,7 @@ Note:
 
 1. Here OkHttp plugin is used to communicate with APIs created in PHP. Refer - http://square.github.io/okhttp/
 
-   Add implementation 'com.squareup.okhttp3:okhttp:3.11.0' to Gradle App level.
+   Add implementation 'com.squareup.okhttp3:okhttp:4.9.3' to Gradle App level.
 
 2. 4 APIs are create for CRUD operations in PHP and the database is created in MySQL (using wampserver).
 
